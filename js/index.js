@@ -1,4 +1,8 @@
-alert("Bienvenidos a pampaTicket!");
+let carrito = JSON.parse(localStorage.getItem("productosAgregadosJSON")) || [];
+let saveToLocalStorage = () => {
+  let storageJSON = JSON.stringify(carrito);
+  localStorage.setItem("productosAgregadosJSON", storageJSON);
+};
 
 class Ticket {
   constructor(id, nombre, info, lugar, precio, stock, img) {
