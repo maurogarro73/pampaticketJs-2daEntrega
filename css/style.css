@@ -229,6 +229,16 @@ body {
     background-color: #273440;
     transition: 0.1s; }
 
+.formularioCorrecto input {
+  border-bottom: 2px solid  #1ed12d;
+  opacity: 1;
+}
+
+.formularioIncorrecto input{
+  border-bottom: 2px solid #bb2929;;
+  opacity: 1;
+}
+
 /*
 =========================FIN PAGINA CONTACTO ==========================
 */
