@@ -92,8 +92,7 @@ const ticket4 = new Ticket(
   "img/recital6.jpg"
 );
 
-const entradas = [];
-entradas.push(ticket1, ticket2, ticket3, ticket4);
+const entradas = [ticket1, ticket2, ticket3, ticket4]; //Mas simplificado
 
 /* Muestra todos los recitales */
 function renderRecitalesTodos() {
@@ -145,3 +144,7 @@ function eliminarCart(id) {
   renderCarrito();
   saveToLocalStorage();
 }
+
+/*
+  Para las funciones eliminar y agregar estaria bueno poner un listener a cada boton, tambien se le puede pasar el onclick con la funcion, pero va a quedar mejor hacer el listener
+*/
